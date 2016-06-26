@@ -11,7 +11,7 @@ Helps you find positive tweets about your brand!
 
 `grunt serve`  
   
-Visit in browser @ http://localhost:9000/
+Visit in browser @ http://localhost:9000/, optimized for Chrome
 
 ## Running Tests
 
