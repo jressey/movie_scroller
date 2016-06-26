@@ -1,38 +1,34 @@
 angular.module('movieScrollerApp')
 .controller('MovieController', function($scope, $q, movieService) {
     $scope.movies = []; 
-    $scope.page;
+    $scope.page = 1;
 
     $scope.init = function() {
-        $scope.getMovies(1);
+        $scope.getMovies();
     }
 
-    $scope.getMovies = function(page) {
-         movieService.getMovies(page)
+    $scope.getMovies = function() {
+         movieService.getMovies($scope.page)
          .then(function(data) {
             var movies = data['results'];
-
-            // if ($scope.movies.size > 0) {
-            //     $scope.movies = $scope.movies.concat(movies);
-            // } else {
-            //     $scope.movies = movies;
-            // }
             return movies;
         }).then(function(movies) {
-            console.log(movies);
             for(var i = 0; i < movies.length; i++) {
-                console.log(movies[i].poster_path);
                 movies[i].poster_url = $scope.getPosterUrl(movies[i].poster_path)
             }
-            $scope.movies = movies;
+            if ($scope.movies.length > 0) {
+                $scope.movies = $scope.movies.concat(movies);
+            } else {
+                $scope.movies = movies;
+            }
+            $scope.page += 1;
         }, function() {
             $scope.movieError = true;
         });
      }
 
      $scope.getPosterUrl = function(moviePosterPath) {
-        var base_url = "http://image.tmdb.org/t/p/w342";
-        console.log(base_url + "/" + moviePosterPath);
+        var base_url = "http://image.tmdb.org/t/p/w185";
         return base_url + "/" + moviePosterPath;
     }
 

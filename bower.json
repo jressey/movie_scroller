@@ -8,12 +8,12 @@
     "angular-cookies": "^1.4.0",
     "angular-resource": "^1.4.0",
     "angular-route": "^1.4.0",
-    "angular-sanitize": "^1.4.0",
-    "angular-touch": "^1.4.0"
+    "angular-sanitize": "^1.4.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0",
-    "ng-twitter-api": "^0.1.5"
+    "ng-twitter-api": "^0.1.5",
+    "angulargrid": "^0.6.0"
   },
   "appPath": "app",
   "moduleName": "twitterApp",

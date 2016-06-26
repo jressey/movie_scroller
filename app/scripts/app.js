@@ -1,5 +1,6 @@
 angular.module('movieScrollerApp', [
 	'ngRoute',
+  'angularGrid',
 	'movieScrollerApp.services'
 	])
 	.config(function ($routeProvider) {
