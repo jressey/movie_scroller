@@ -1,0 +1,20 @@
+<br />
+<div class="container">
+	<h1>Hello!</h1>
+</div>
+<br />
+<div class="row">
+	<div class="col-xs-12" id="results">
+		<div class="row" ng-repeat="m in movies">
+			<div class="col-xs-2 col-sm-1">
+				<p>{{m.poster_url}}</p>
+				<img ng-src="{{m.poster_url}}">
+				<p>{{m.title}}</p>
+			</div>
+		</div>
+		<div ng-show="movie">
+			Sorry, something went wrong
+		</div>
+	</div>
+</div>
+</div>
