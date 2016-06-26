@@ -1,5 +1,5 @@
 {
-  "name": "twitter-analyzer",
+  "name": "movie-scroller-app",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.4.0",
@@ -16,7 +16,7 @@
     "angulargrid": "^0.6.0"
   },
   "appPath": "app",
-  "moduleName": "twitterApp",
+  "moduleName": "movieScrollerApp",
   "overrides": {
     "bootstrap": {
       "main": [
