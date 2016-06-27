@@ -1,6 +1,6 @@
-# Twitter Analyzer
+# Movie Scrollor
 
-Helps you find positive tweets about your brand!
+Scroll an unending list of popular movies
 
 ## Installation
 
@@ -11,14 +11,18 @@ Helps you find positive tweets about your brand!
 
 `grunt serve`  
   
-Visit in browser @ http://localhost:9000/, optimized for Chrome
+Visit in browser @ http://localhost:9000/, please use Chrome
 
 ## Running Tests
 
 `grunt test`
 
 ## What's next:  
-
+- unit testing
+- consider replacing grid package to get better infinite scroll behavior
+- fix bug where items don't load in left to right
+- slow load and add spinner
+- retry express configuration for heroku
 	
 
 
