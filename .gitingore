@@ -1,4 +1,4 @@
-/node_modules
+movie_scroller/node_modules
 /.tmp
 /.sass-cache
-/bower_components
+movie_scroller/bower_components
