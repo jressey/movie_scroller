@@ -4,8 +4,12 @@ Scroll an unending list of popular movies
 
 ## Installation
 
-`npm install`  
-`bower install`  
+1. Clone this repository
+2. Install node.js with homebrew or [download installer](https://nodejs.org/en/download/)
+3. Update npm: `npm install npm -g`
+4. `cd movie_scroller_app`
+5. install npm packages: `npm install`  
+6. install bower packages: `bower install`  
 
 ## Run in browser
 
