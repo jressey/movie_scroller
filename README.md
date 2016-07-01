@@ -23,10 +23,8 @@ Visit in browser @ http://localhost:9000/, please use Chrome
 
 ## What's next:  
 - unit testing
-- consider replacing grid package to get better infinite scroll behavior
 - fix bug where items don't load in left to right
-- slow load and add spinner
-- retry express configuration for heroku
+- express configuration for heroku, deploy
 	
 
 
