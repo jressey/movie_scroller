@@ -1,22 +1,19 @@
 body {
-	background-color: black;
-	height: 100%;
+    background-color: black;
+    height: 100%;
 }
 h1 {
-	color: #fff;
-	text-align: center;
+    color: #fff;
+    text-align: center;
 }
 .grid {
     
 }
 
 .grid {
-	list-style: none;
-    -webkit-animation: appear 2s;
-    animation: appear 2s;
-    -webkit-transform: scale(0,0); 
+    list-style: none;
+    animation: appear 2s; 
     transform: scale(0,0);
-    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -26,37 +23,42 @@ h1 {
 }
  
 .grid:hover .grid-img { 
-	transform: scale(1.2);
-	opacity: 1;
+    opacity: 1;
+    transform: scale(1.5);
+    transition-duration: 1.5s;
+    
 }
 
 .grid:hover {
-	position: relative;
-	z-index: 9998;
+    position: relative;
+    z-index: 9998;
 }
 
 .title {
-    opacity: .8;
+    opacity: 0;
     border-radius: 5px;
-	background-color: #000;
+    background-color: #000;
     color: white;
-	font-size: 1.75em;
-	position: absolute; 
-	top:100px; 
-	width: 100%; 
-	z-index:9999;
-	text-align: center;
-	display: none;
+    font-size: 1.75em;
+    position: absolute; 
+    top:100px; 
+    width: 100%; 
+    z-index:9999;
+    text-align: center;
+    display: none;
 }
 
-.grid:hover .title { display:block; }
+.grid:hover .title { 
+    display: block;
+    animation: titleAppear 2s;
+}
 
-@-webkit-keyframes appear {
+@keyframes titleAppear {
     100% {
-        -webkit-transform: scale(1,1); 
+        transform: scale(1,1); 
     }
     from { opacity: 0; }
-    to   { opacity: 1; }
+    to   { opacity: .8; }
 }
 
 @keyframes appear {

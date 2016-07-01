@@ -1,5 +1,5 @@
 {
-  "name": "twitteranalyzer",
+  "name": "movie-scroller-app",
   "private": true,
   "devDependencies": {
     "angular-route": "^1.5.7",

@@ -28,7 +28,7 @@ angular.module('movieScrollerApp')
      }
 
      $scope.getPosterUrl = function(moviePosterPath) {
-        var base_url = "http://image.tmdb.org/t/p/w185";
+        var base_url = "http://image.tmdb.org/t/p/w342";
         return base_url + "/" + moviePosterPath;
     }
 
