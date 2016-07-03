@@ -16,11 +16,7 @@ angular.module('movieScrollerApp')
             for(var i = 0; i < movies.length; i++) {
                 movies[i].poster_url = $scope.getPosterUrl(movies[i].poster_path)
             }
-            if ($scope.movies.length > 0) {
-                $scope.movies = $scope.movies.concat(movies);
-            } else {
-                $scope.movies = movies;
-            }
+            $scope.appendMovies(movies)
             $scope.page += 1;
         }, function() {
             $scope.movieError = true;
@@ -30,6 +26,14 @@ angular.module('movieScrollerApp')
      $scope.getPosterUrl = function(moviePosterPath) {
         var base_url = "http://image.tmdb.org/t/p/w342";
         return base_url + "/" + moviePosterPath;
+    }
+
+    $scope.appendMovies = function(movies) {
+        if ($scope.movies.length > 0) {
+            $scope.movies = $scope.movies.concat(movies);
+        } else {
+            $scope.movies = movies;
+        }
     }
 
     $scope.init();
